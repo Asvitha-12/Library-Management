@@ -1,0 +1,11 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "SAP Object Node Type ZZCICIT_LIBMGLIB",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "name": "ZZCICIT_LIBMGLIB",
+  "sapObjectType": "ZZCICIT_LIBMGLIB",
+  "rootNode": true
+}

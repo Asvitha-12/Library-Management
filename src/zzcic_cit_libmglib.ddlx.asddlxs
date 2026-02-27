@@ -1,0 +1,262 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'BookID'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'BookID'
+annotate view ZZCIC_CIT_LIBMGLIB with
+{
+  @EndUserText.label: 'BookID'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'BookID'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'BookID'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  BookID;
+  
+  @EndUserText.label: 'Title'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'Title'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'Title'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  Title;
+  
+  @EndUserText.label: 'Author'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Author'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Author'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  Author;
+  
+  @UI.identification: [ {
+    position: 40 
+  } ]
+  @UI.lineItem: [ {
+    position: 40 
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Category;
+  
+  @EndUserText.label: 'Language'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Language'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Language'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Language;
+  
+  @EndUserText.label: 'Edition'
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'Edition'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'Edition'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  Edition;
+  
+  @EndUserText.label: 'NoPages'
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'NoPages'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 , 
+    label: 'NoPages'
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  NoPages;
+  
+  @EndUserText.label: 'PublishDate'
+  @UI.identification: [ {
+    position: 80 , 
+    label: 'PublishDate'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 , 
+    label: 'PublishDate'
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  PublishDate;
+  
+  @EndUserText.label: 'Available'
+  @UI.identification: [ {
+    position: 90 , 
+    label: 'Available'
+  } ]
+  @UI.lineItem: [ {
+    position: 90 , 
+    label: 'Available'
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  Available;
+  
+  @EndUserText.label: 'TotalCopies'
+  @UI.identification: [ {
+    position: 100 , 
+    label: 'TotalCopies'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 , 
+    label: 'TotalCopies'
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  TotalCopies;
+  
+  @EndUserText.label: 'SelfNum'
+  @UI.identification: [ {
+    position: 110 , 
+    label: 'SelfNum'
+  } ]
+  @UI.lineItem: [ {
+    position: 110 , 
+    label: 'SelfNum'
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  SelfNum;
+  
+  @EndUserText.label: 'Price'
+  @UI.identification: [ {
+    position: 120 , 
+    label: 'Price'
+  } ]
+  @UI.lineItem: [ {
+    position: 120 , 
+    label: 'Price'
+  } ]
+  @UI.selectionField: [ {
+    position: 120 
+  } ]
+  Price;
+  
+  @EndUserText.label: 'Currency'
+  @UI.identification: [ {
+    position: 130 , 
+    label: 'Currency'
+  } ]
+  @UI.lineItem: [ {
+    position: 130 , 
+    label: 'Currency'
+  } ]
+  @UI.selectionField: [ {
+    position: 130 
+  } ]
+  Currency;
+  
+  @UI.identification: [ {
+    position: 140 
+  } ]
+  @UI.lineItem: [ {
+    position: 140 
+  } ]
+  @UI.selectionField: [ {
+    position: 140 
+  } ]
+  LocalCreatedBy;
+  
+  @UI.identification: [ {
+    position: 150 
+  } ]
+  @UI.lineItem: [ {
+    position: 150 
+  } ]
+  @UI.selectionField: [ {
+    position: 150 
+  } ]
+  LocalCreatedAt;
+  
+  @UI.identification: [ {
+    position: 160 
+  } ]
+  @UI.lineItem: [ {
+    position: 160 
+  } ]
+  @UI.selectionField: [ {
+    position: 160 
+  } ]
+  LocalLastChangedBy;
+  
+  @UI.identification: [ {
+    position: 170 
+  } ]
+  @UI.lineItem: [ {
+    position: 170 
+  } ]
+  @UI.selectionField: [ {
+    position: 170 
+  } ]
+  LocalLastChangedAt;
+  
+  @UI.identification: [ {
+    position: 180 
+  } ]
+  @UI.lineItem: [ {
+    position: 180 
+  } ]
+  @UI.selectionField: [ {
+    position: 180 
+  } ]
+  LastChangedAt;
+  
+  @EndUserText.label: '_BaseEntity'
+  @UI.identification: [ {
+    position: 190 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.lineItem: [ {
+    position: 190 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.selectionField: [ {
+    position: 190 
+  } ]
+  _BaseEntity;
+}

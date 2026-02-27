@@ -1,0 +1,60 @@
+managed implementation in class ZZCIBP_R_CIT_LIBMGLIB unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZZCIR_CIT_LIBMGLIB alias ZCitLibmg
+persistent table ZCIT_LIBMG
+extensible
+draft table ZZCICT_LBMG_DLIB
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+{
+  field ( mandatory : create )
+   BookID;
+
+  field ( readonly )
+   LocalCreatedBy,
+   LocalCreatedAt,
+   LocalLastChangedBy,
+   LocalLastChangedAt,
+   LastChangedAt;
+
+  field ( readonly : update )
+   BookID;
+
+
+  create;
+  update;
+  delete;
+
+validation validate_category on save { create; update; }
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZCIT_LIBMG corresponding extensible
+  {
+    BookID = BOOK_ID;
+    Title = TITLE;
+    Author = AUTHOR;
+    Category = CATEGORY;
+    Language = LANGUAGE;
+    Edition = EDITION;
+    NoPages = NO_PAGES;
+    PublishDate = PUBLISH_DATE;
+    Available = AVAILABLE;
+    TotalCopies = TOTAL_COPIES;
+    SelfNum = SELF_NUM;
+    Price = PRICE;
+    Currency = CURRENCY;
+    LocalCreatedBy = LOCAL_CREATED_BY;
+    LocalCreatedAt = LOCAL_CREATED_AT;
+    LocalLastChangedBy = LOCAL_LAST_CHANGED_BY;
+    LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+    LastChangedAt = LAST_CHANGED_AT;
+  }
+
+}

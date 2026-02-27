@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZZCIC_CIT_LIBMGLIB'
+@MappingRole: true
+define role ZZCIC_CIT_LIBMGLIB {
+  grant select on ZZCIC_CIT_LIBMGLIB
+  where INHERITING CONDITIONS FROM ENTITY ZZCIR_CIT_LIBMGLIB REPLACING { ROOT WITH _BaseEntity };
+}
